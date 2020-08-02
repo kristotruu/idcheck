@@ -1,0 +1,46 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "font";
+
+body {
+  font-family: "prompt";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.country-generator {
+  padding: 25px;
+  margin: 15px;
+  .title {
+    margin: 27px 0;
+    font-family: "prompt";
+    font-weight: bold;
+  }
+  .generated {
+    background: #f1f1f1;
+    margin: 5px 0;
+    padding: 5px 0px;
+    border-radius: 27px;
+  }
+  .attribute-name {
+    font-family: prompt-light;
+    font-size: 12px;
+    margin-bottom: 9px;
+  }
+  .react-date-picker__wrapper {
+    padding: 7px;
+    border-color: #ded8d8;
+    border-radius: 4px;
+    .react-date-picker__inputGroup__input {
+      color: #4e4b4b;
+    }
+  }
+  .result-list {
+    margin: 45px 0;
+  }
+}
