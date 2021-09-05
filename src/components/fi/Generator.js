@@ -47,5 +47,5 @@ function getSequenceNumber(gender) {
 
 function getCheckSum(code) {
     const checkNumberString = "0123456789ABCDEFHJKLMNPRSTUVWXY";
-    return checkNumberString.charAt(Math.round(((code / 31) % 1) * 31) - 1);
+    return checkNumberString.charAt(Math.round(((code / 31) % 1) * 31));
 }
