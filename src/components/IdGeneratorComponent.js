@@ -72,6 +72,7 @@ class IdGeneratorComponent extends Component {
                         <a href="https://www.buymeacoffee.com/kristo" target="_blank">
                             <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" className="btn-coffee" />
                         </a>
+                        <div style={{fontSize:10, marginTop:5}}>You can buy me a coffee so I can maintain this application</div>
                     </Col>
                 </Row>
                 <Row>
