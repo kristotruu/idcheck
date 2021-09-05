@@ -17,7 +17,12 @@ export function generate(date, gender) {
     let codeWithoutCheckNumber = `${genderNumber}${datePart}${sequenceNumber}`;
 
     const checkNumber = getCheckSum(codeWithoutCheckNumber);
-    return `${codeWithoutCheckNumber}${checkNumber}`;
+
+    return {
+        gender: gender,
+        date: date,
+        code: `${codeWithoutCheckNumber}${checkNumber}`
+    }
 }
 
 function getGenderNumber(date, gender) {

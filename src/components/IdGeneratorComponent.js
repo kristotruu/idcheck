@@ -70,7 +70,7 @@ class IdGeneratorComponent extends Component {
                     <Col className="title" md={8}> Identification number generator</Col>
                     <Col md={3}>
                         <a href="https://www.buymeacoffee.com/kristo" target="_blank">
-                            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-green.png" alt="Buy Me A Coffee" className="btn-coffee" />
+                            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" className="btn-coffee" />
                         </a>
                     </Col>
                 </Row>
@@ -88,7 +88,7 @@ class IdGeneratorComponent extends Component {
                             />
                         )}
                         <Row>
-                            <Col className="d-flex justify-content-start"><Button className="btn-random" variant="primary" size="md" onClick={this.randomize}>Random</Button></Col>
+                            <Col className="d-flex justify-content-start"><Button className="btn-random light" variant="primary" size="md" onClick={this.randomize}>Random</Button></Col>
                         </Row>
                     </Col>
                     <Col md={1}>
@@ -136,8 +136,15 @@ class IdGeneratorComponent extends Component {
                             {this.state.codes.map(code =>
 
                                 <Row key={code} className="generated">
-                                    <Col md={10}>{code}</Col>
-                                    <Col md={2} className="d-flex justify-content-end align-items-center"><CopyToClipboard text={code}><MdContentCopy/></CopyToClipboard></Col>
+                                    <Col md={6}>{code.code} </Col>
+                                    {code.gender && <Col md={2}>
+                                        <span className="badge">{code.gender === 1 ? 'MALE' : 'FEMALE'}</span>
+                                    </Col>
+                                    }
+                                    <Col md={2}>
+                                        <span className="badge badge-dark">{code.date.format('YYYY-MM-DD')}</span>
+                                    </Col>
+                                    <Col md={2} className="d-flex justify-content-end align-items-center"><CopyToClipboard text={code.code}><MdContentCopy/></CopyToClipboard></Col>
                                 </Row>
                             )}
                         </div>

@@ -5,7 +5,8 @@ export function random() {
     const end = new Date();
     const randomDate = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
     const randomGender = [1,2][Math.floor(Math.random() * [1,2].length)];
-    return generate(randomDate, randomGender);
+
+    return generate(randomDate, randomGender)
 }
 
 export function generate(date, gender) {
@@ -16,7 +17,12 @@ export function generate(date, gender) {
     let codeWithoutCheckNumber = `${genderNumber}${datePart}${sequenceNumber}`;
 
     const checkNumber = getCheckSum(codeWithoutCheckNumber);
-    return `${codeWithoutCheckNumber}${checkNumber}`;
+
+    return {
+        gender: gender,
+        date: date,
+        code: `${codeWithoutCheckNumber}${checkNumber}`
+    }
 }
 
 // 1:	1800...1899.a	sündinud	mees

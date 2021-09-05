@@ -1,4 +1,4 @@
-$primary: #298d69 !default;
+$primary: #061c01 !default;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "font";
@@ -34,7 +34,7 @@ code {
     margin: 5px 0;
     padding: 15px 0px;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 15px;
   }
   .attribute-name {
     font-family: prompt-light;
@@ -55,11 +55,20 @@ code {
 
   .btn-random{
     margin: 20px 0;
-    border-radius: 2px;
+    padding: 10px 15px;
+    border-radius: 5px;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
     color: white;
+    &.light {
+      background: rgb(254, 221, 0);
+      border-color: rgb(254, 221, 0);
+      color: black;
+      &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(254, 221, 0, 50%);
+      }
+    }
   }
 }
 
@@ -101,4 +110,8 @@ hr{
 
 .btn-coffee {
   width: 100%;
+}
+
+.badge {
+  font-size: 80%;
 }

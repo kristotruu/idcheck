@@ -13,7 +13,12 @@ export function generate(date, gender) {
     const sequenceNumber = getSequenceNumber(gender);
     const datePart = date.format("DDMMYY");
     const centurySign = getCentury(date);
-    return `${datePart}${centurySign}${sequenceNumber}${getCheckSum(parseInt(`${datePart}${sequenceNumber}`))}`;
+
+    return {
+        gender: gender,
+        date: date,
+        code: `${datePart}${centurySign}${sequenceNumber}${getCheckSum(parseInt(`${datePart}${sequenceNumber}`))}`
+    }
 }
 
 function getCentury(date) {

@@ -13,7 +13,12 @@ export function generate(date, gender) {
     const withoutCheckSum =  `${date.format("DDMMYY")}${getCentury(date)}${getSequenceNumber()}`;
     const checkDigit = getCheckDigit(withoutCheckSum)
     const code = `${withoutCheckSum}${checkDigit}`;
-    return code.substring(0, 6) + "-" + code.substring(6);
+
+    return {
+        gender: null,
+        date: date,
+        code: code.substring(0, 6) + "-" + code.substring(6)
+    }
 }
 
 // (0 for 19. (1800-1899), 1 for 20. (1900-1999) and 2 for 21. (2000-2099)
