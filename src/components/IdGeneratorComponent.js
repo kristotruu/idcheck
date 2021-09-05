@@ -3,8 +3,7 @@ import DatePicker from 'react-date-picker';
 import {Form, Button, Row, Col} from "react-bootstrap";
 import Moment from 'moment'
 import {generate, random} from "./Generator";
-import {CopyToClipboard} from 'react-copy-to-clipboard';
-import {MdContentCopy} from 'react-icons/md';
+import IDCode from "./IDCode";
 
 const countryConfigurations = [
     {
@@ -134,20 +133,7 @@ class IdGeneratorComponent extends Component {
                 <Row>
                     <Col>
                         <div className="result-list">
-                            {this.state.codes.map(code =>
-
-                                <Row key={code} className="generated">
-                                    <Col md={6}>{code.code} </Col>
-                                    {code.gender && <Col md={2}>
-                                        <span className="badge">{code.gender === 1 ? 'MALE' : 'FEMALE'}</span>
-                                    </Col>
-                                    }
-                                    <Col md={2}>
-                                        <span className="badge badge-dark">{code.date.format('YYYY-MM-DD')}</span>
-                                    </Col>
-                                    <Col md={2} className="d-flex justify-content-end align-items-center"><CopyToClipboard text={code.code}><MdContentCopy/></CopyToClipboard></Col>
-                                </Row>
-                            )}
+                            {this.state.codes.map(code => <IDCode idCode={code} />)}
                         </div>
                     </Col>
                 </Row>

@@ -1,4 +1,5 @@
 $primary: #061c01 !default;
+$secondary: rgb(254, 221, 0) !default;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "font";
@@ -62,8 +63,8 @@ code {
     font-size: 14px;
     color: white;
     &.light {
-      background: rgb(254, 221, 0);
-      border-color: rgb(254, 221, 0);
+      background: $secondary;
+      border-color: $secondary;
       color: black;
       &:focus {
         box-shadow: 0 0 0 0.2rem rgba(254, 221, 0, 50%);
@@ -114,4 +115,19 @@ hr{
 
 .badge {
   font-size: 80%;
+}
+
+.toast {
+  border-radius: 2px;
+  border: none;
+  background: $primary;
+  color: white;
+  .toast-header {
+    border: none;
+    background: $primary;
+    color: $secondary;
+    button {
+      color: $secondary;
+    }
+  }
 }
