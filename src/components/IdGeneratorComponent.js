@@ -54,9 +54,11 @@ class IdGeneratorComponent extends Component {
     }
 
     onChange = (field, value) => {
-        this.setState({[field]: value}, () => {
-            this.setState({codes: [generate(this.state.country, this.state.date, this.state.gender)]})
-        });
+        this.setState({[field]: value });
+    }
+
+    onGenerate = () => {
+        this.setState({codes: [generate(this.state.country, this.state.date, this.state.gender)]});
     }
 
     render() {
@@ -64,12 +66,16 @@ class IdGeneratorComponent extends Component {
 
         return (
             <div className="country-generator">
-                <Row className="row d-flex align-items-center">
-                    <Col className="title"> Identification number generator</Col>
-                    <Col className="d-flex justify-content-end"><Button variant="outline-primary" size="sm" onClick={this.randomize}>Random</Button></Col>
+                <Row className="row d-flex align-items-center header-wrapper">
+                    <Col className="title" md={8}> Identification number generator</Col>
+                    <Col md={3}>
+                        <a href="https://www.buymeacoffee.com/kristo" target="_blank">
+                            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-green.png" alt="Buy Me A Coffee" className="btn-coffee" />
+                        </a>
+                    </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col md={3}>
                         <div className="attribute-name">Country</div>
                         {countryConfigurations.map(countryConf =>
                             <Form.Check
@@ -81,35 +87,48 @@ class IdGeneratorComponent extends Component {
                                 id={`country-${countryConf.id}`}
                             />
                         )}
+                        <Row>
+                            <Col className="d-flex justify-content-start"><Button className="btn-random" variant="primary" size="md" onClick={this.randomize}>Random</Button></Col>
+                        </Row>
                     </Col>
-                    <Col>
-                        <div className="attribute-name">Birthday</div>
-                        <DatePicker
-                            format={"y-MM-dd"}
-                            onChange={(e) => this.onChange("date", e ? Moment(e).toDate() : null)}
-                            value={this.state.date}
-                        />
+                    <Col md={1}>
+                        <hr/>
                     </Col>
-                    {countryConfiguration.showGender && <Col>
-                        <div className="attribute-name">Gender</div>
-                        <Form.Check
-                            checked={this.state.gender === 1}
-                            onChange={(e) => this.onChange("gender", 1)}
-                            name="gender"
-                            type="radio"
-                            label="male"
-                            id="est-gender-man"
-                        />
-                        <Form.Check
-                            checked={this.state.gender === 2}
-                            onChange={(e) => this.onChange("gender", 2)}
-                            name="gender"
-                            type="radio"
-                            label="female"
-                            id="est-gender-woman"
-                        />
+                    <Col md={8}>
+                        <Row>
+                            <Col>
+                                <div className="attribute-name">Birthday</div>
+                                <DatePicker
+                                    format={"y-MM-dd"}
+                                    onChange={(e) => this.onChange("date", e ? Moment(e).toDate() : null)}
+                                    value={this.state.date}
+                                />
+                            </Col>
+                            {countryConfiguration.showGender && <Col>
+                                <div className="attribute-name">Gender</div>
+                                <Form.Check
+                                    checked={this.state.gender === 1}
+                                    onChange={(e) => this.onChange("gender", 1)}
+                                    name="gender"
+                                    type="radio"
+                                    label="male"
+                                    id="est-gender-man"
+                                />
+                                <Form.Check
+                                    checked={this.state.gender === 2}
+                                    onChange={(e) => this.onChange("gender", 2)}
+                                    name="gender"
+                                    type="radio"
+                                    label="female"
+                                    id="est-gender-woman"
+                                />
+                            </Col>
+                            }
+                        </Row>
+                        <Row>
+                            <Col className="d-flex justify-content-start"><Button className="btn-random" variant="primary" size="md" onClick={this.onGenerate}>GENERATE SPECIFIC</Button></Col>
+                        </Row>
                     </Col>
-                    }
                 </Row>
                 <Row>
                     <Col>

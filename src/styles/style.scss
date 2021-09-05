@@ -1,3 +1,5 @@
+$primary: #298d69 !default;
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "font";
 
@@ -12,20 +14,27 @@ code {
     monospace;
 }
 
-
 .country-generator {
-  padding: 25px;
+  //box-shadow: rgb(13 12 34 / 10%) -6px 0px 30px;
+  box-shadow: #ececec -6px 0px 30px;
+  padding: 40px;
   margin: 15px;
-  .title {
-    margin: 27px 0;
-    font-family: "prompt";
-    font-weight: bold;
+  .header-wrapper {
+    margin-bottom: 50px;
+    .title {
+      margin: 30px 0;
+      font-family: "prompt";
+      font-weight: bold;
+      font-size: 27px;
+      padding-bottom: 15px;
+    }
   }
   .generated {
-    background: #f1f1f1;
+    background: #fbfbfb;
     margin: 5px 0;
-    padding: 5px 0px;
-    border-radius: 27px;
+    padding: 15px 0px;
+    border-radius: 5px;
+    font-size: 14px;
   }
   .attribute-name {
     font-family: prompt-light;
@@ -43,4 +52,53 @@ code {
   .result-list {
     margin: 45px 0;
   }
+
+  .btn-random{
+    margin: 20px 0;
+    border-radius: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+  }
+}
+
+input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #efefef;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: $primary;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+hr{
+
+  border:         none;
+  border-left:    1px solid hsl(0, 0%, 89%);
+  height:         100%;
+  width:          1px;
+}
+
+.btn-coffee {
+  width: 100%;
 }
