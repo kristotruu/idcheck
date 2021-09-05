@@ -36,6 +36,13 @@ code {
     padding: 15px 0px;
     border-radius: 5px;
     font-size: 15px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 400ms;
+    &:hover {
+      background: #f3f3f3;
+      transform: scale(1.05);
+    }
   }
   .attribute-name {
     font-family: prompt-light;
