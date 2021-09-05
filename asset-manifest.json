@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/idcheck/static/css/main.ba8cf666.chunk.css",
+    "main.css": "/idcheck/static/css/main.a17fbe1e.chunk.css",
     "main.js": "/idcheck/static/js/main.23853bc8.chunk.js",
     "main.js.map": "/idcheck/static/js/main.23853bc8.chunk.js.map",
     "runtime-main.js": "/idcheck/static/js/runtime-main.f102b0e1.js",
@@ -9,10 +9,10 @@
     "static/js/2.3a83a79e.chunk.js": "/idcheck/static/js/2.3a83a79e.chunk.js",
     "static/js/2.3a83a79e.chunk.js.map": "/idcheck/static/js/2.3a83a79e.chunk.js.map",
     "index.html": "/idcheck/index.html",
-    "precache-manifest.597238a599fbe5ee16802278e0c97c3d.js": "/idcheck/precache-manifest.597238a599fbe5ee16802278e0c97c3d.js",
+    "precache-manifest.be2d5f70ce0789a7a841f093a931b73c.js": "/idcheck/precache-manifest.be2d5f70ce0789a7a841f093a931b73c.js",
     "service-worker.js": "/idcheck/service-worker.js",
     "static/css/2.93b3b32d.chunk.css.map": "/idcheck/static/css/2.93b3b32d.chunk.css.map",
-    "static/css/main.ba8cf666.chunk.css.map": "/idcheck/static/css/main.ba8cf666.chunk.css.map",
+    "static/css/main.a17fbe1e.chunk.css.map": "/idcheck/static/css/main.a17fbe1e.chunk.css.map",
     "static/js/2.3a83a79e.chunk.js.LICENSE.txt": "/idcheck/static/js/2.3a83a79e.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/idcheck/static/media/Prompt-Thin.ddcfbf89.ttf"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.f102b0e1.js",
     "static/css/2.93b3b32d.chunk.css",
     "static/js/2.3a83a79e.chunk.js",
-    "static/css/main.ba8cf666.chunk.css",
+    "static/css/main.a17fbe1e.chunk.css",
     "static/js/main.23853bc8.chunk.js"
   ]
 }
