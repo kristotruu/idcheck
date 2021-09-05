@@ -97,7 +97,7 @@ class IdGeneratorComponent extends Component {
                     </Col>
                     <Col md={8}>
                         <Row>
-                            <Col>
+                            <Col md={6} sm={12}>
                                 <div className="attribute-name">Birthday</div>
                                 <DatePicker
                                     format={"y-MM-dd"}
@@ -105,7 +105,7 @@ class IdGeneratorComponent extends Component {
                                     value={this.state.date}
                                 />
                             </Col>
-                            {countryConfiguration.showGender && <Col>
+                            {countryConfiguration.showGender && <Col md={6} sm={12}>
                                 <div className="attribute-name">Gender</div>
                                 <Form.Check
                                     checked={this.state.gender === 1}
