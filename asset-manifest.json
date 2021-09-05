@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/idcheck/static/css/main.78b9d43b.chunk.css",
-    "main.js": "/idcheck/static/js/main.53ab1983.chunk.js",
-    "main.js.map": "/idcheck/static/js/main.53ab1983.chunk.js.map",
-    "runtime-main.js": "/idcheck/static/js/runtime-main.e1c5c11a.js",
-    "runtime-main.js.map": "/idcheck/static/js/runtime-main.e1c5c11a.js.map",
+    "main.css": "/idcheck/static/css/main.6b32aa14.chunk.css",
+    "main.js": "/idcheck/static/js/main.006689ec.chunk.js",
+    "main.js.map": "/idcheck/static/js/main.006689ec.chunk.js.map",
+    "runtime-main.js": "/idcheck/static/js/runtime-main.f102b0e1.js",
+    "runtime-main.js.map": "/idcheck/static/js/runtime-main.f102b0e1.js.map",
     "static/css/2.93b3b32d.chunk.css": "/idcheck/static/css/2.93b3b32d.chunk.css",
-    "static/js/2.be232c6d.chunk.js": "/idcheck/static/js/2.be232c6d.chunk.js",
-    "static/js/2.be232c6d.chunk.js.map": "/idcheck/static/js/2.be232c6d.chunk.js.map",
+    "static/js/2.3a83a79e.chunk.js": "/idcheck/static/js/2.3a83a79e.chunk.js",
+    "static/js/2.3a83a79e.chunk.js.map": "/idcheck/static/js/2.3a83a79e.chunk.js.map",
     "index.html": "/idcheck/index.html",
-    "precache-manifest.90232903bcbede01450ed9dc6389c43a.js": "/idcheck/precache-manifest.90232903bcbede01450ed9dc6389c43a.js",
+    "precache-manifest.32e8dc95b2828fe50e50fd055008cf09.js": "/idcheck/precache-manifest.32e8dc95b2828fe50e50fd055008cf09.js",
     "service-worker.js": "/idcheck/service-worker.js",
     "static/css/2.93b3b32d.chunk.css.map": "/idcheck/static/css/2.93b3b32d.chunk.css.map",
-    "static/css/main.78b9d43b.chunk.css.map": "/idcheck/static/css/main.78b9d43b.chunk.css.map",
-    "static/js/2.be232c6d.chunk.js.LICENSE.txt": "/idcheck/static/js/2.be232c6d.chunk.js.LICENSE.txt",
+    "static/css/main.6b32aa14.chunk.css.map": "/idcheck/static/css/main.6b32aa14.chunk.css.map",
+    "static/js/2.3a83a79e.chunk.js.LICENSE.txt": "/idcheck/static/js/2.3a83a79e.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/idcheck/static/media/Prompt-Thin.ddcfbf89.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.e1c5c11a.js",
+    "static/js/runtime-main.f102b0e1.js",
     "static/css/2.93b3b32d.chunk.css",
-    "static/js/2.be232c6d.chunk.js",
-    "static/css/main.78b9d43b.chunk.css",
-    "static/js/main.53ab1983.chunk.js"
+    "static/js/2.3a83a79e.chunk.js",
+    "static/css/main.6b32aa14.chunk.css",
+    "static/js/main.006689ec.chunk.js"
   ]
 }
